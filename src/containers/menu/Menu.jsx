@@ -1,8 +1,10 @@
 import React from 'react';
 import './menu.css';
 
-export const Menu = () => {
+const Menu = () => {
   return (
     <div>Menu</div>
   )
 }
+
+export default Menu

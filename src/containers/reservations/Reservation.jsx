@@ -1,8 +1,9 @@
-import React from 'react';
+import React from 'react'
 import './reservation.css';
-
-export const Reservation = () => {
+const Reservation = () => {
   return (
     <div>Reservation</div>
   )
 }
+
+export default Reservation
