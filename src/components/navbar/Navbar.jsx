@@ -32,7 +32,11 @@ const Navbar = () => {
                   <a href='#'>Reservation</a>
                   <a href='#'>Blog</a>
                   <a href='#'>About Us</a>
+                  <div className="mobile-navbar-action-button">
+                   <button>Order Now</button>
+                  </div>
                 </div>
+                
               )
                 
               

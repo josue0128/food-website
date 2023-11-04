@@ -1,0 +1,85 @@
+.reservation-flex-container{
+   padding: 1rem;
+   width: 100%;
+}
+.container{
+    width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 2rem 4rem;
+   background-image: url(../../assets/reservations.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+
+}
+.reservation-content{
+    color: white;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   row-gap: 20px;
+   width: 100%;
+   height: 100%;
+   margin-top: 5rem;
+   margin-bottom: 10rem;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.reservation-content h3{
+    font-family: var(--font-family);
+    font-size: 30px ;
+}
+.reservation-content h1{
+    font-family: var(--font-family-bold);
+    font-size: 68px;
+    font-weight: bolder;
+    line-height: 44px;
+}
+.action button{
+    width: 100px;
+    padding: 0.7rem;
+    font-family: var(--font-family);
+    font-size: 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 2.5px solid white
+}
+@media screen and (max-width:950px){
+    .reservation-content h3{
+        font-size: 20px ;
+    }
+    .reservation-content h1{
+        font-size: 58px;
+    }
+}
+@media screen and (max-width:650px){
+    .container{
+        background-image: url(../../assets/3959915\ 2.png);
+    }
+}
+@media screen and (max-width:450px){
+    .reservation-content{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        row-gap: 10px;
+    }
+    .reservation-content h3{
+        font-size: 18px ;
+    }
+    .reservation-content h1{
+        font-size: 48px;
+    }
+    .container{
+       padding: 2rem;
+    }
+}
+
+

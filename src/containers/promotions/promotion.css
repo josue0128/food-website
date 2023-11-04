@@ -1,0 +1,140 @@
+.promotion-flex-container{
+    position: relative;
+    width: 100%;
+    background-image: url(../../assets/promotions.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 0.5rem 4rem;
+    row-gap: 20px;
+}
+
+.promotion-content{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.promotion-content h3{
+    font-family: var(--font-family);
+    font-size: 30px ;
+}
+.promotion-content h1{
+    font-family: var(--font-family-bold);
+    font-size: 68px;
+    font-weight: bolder;
+    line-height: 44px;
+}
+.promotion-content p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 20px;
+}
+.promotions-action-button button{
+    width: 100px;
+    padding: 0.7rem;
+    font-family: var(--font-family);
+    font-size: 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 2.5px solid white
+}
+.slider-buttons{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.slider-buttons > div{
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#active{
+    width: 15px;
+    height: 15px;
+}
+.next {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+@media screen and (max-width:1050px){
+    .next{
+        right: 30px;
+    }
+   
+}
+
+@media screen and (max-width:950px){
+    .promotion-content h3{
+        font-size: 20px ;
+    }
+    .promotion-content h1{
+        font-size: 58px;
+        line-height: 38px;
+    }
+    .promotion-content p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .next{
+        right: 15px;
+        top: 50%;
+        background-color: gray;
+        width: 40px;
+        height: 40px;
+    }
+    .next svg{
+        height: 25px;
+        width: 25px;
+    }
+}
+@media screen and (max-width:850px){
+    .next{
+        display: none;
+    }
+}
+@media screen and (max-width:650px){
+    .promotion-flex-container{
+        background-image: url(../../assets/Rectangle\ 2.png);
+        padding: 4rem 2rem 0.5rem 2rem;
+    }
+    .slider-buttons > div{
+        width: 5px;
+        height: 5px;
+    }
+    #active{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width:450px){
+    .promotion-flex-container{
+        row-gap: 10px;
+    }
+    .promotion-content h3{
+        font-size: 18px ;
+    }
+    .promotion-content h1{
+        font-size: 48px;
+        line-height: 31px;
+    }
+    .promotion-content p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}

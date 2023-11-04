@@ -32,6 +32,17 @@
     background-color: var(--primary-color);
     color: #ffffff;
 }
+.mobile-navbar-action-button button{
+    padding: 0.5rem;
+    font-family: var(--font-family);
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.mobile-navbar-action-button{
+    display: none;
+}
 .mobile-menu{
     display: none;
     position: relative;
@@ -47,6 +58,8 @@
     top: 20px;
     right: 20px;
     background-color: var(--black-color);
+    z-index: 1;
+    border: none;
 }
 .mobile-menu-links a{
     text-decoration: none;
@@ -63,6 +76,14 @@ cursor: pointer;
         display: none;
     }
     .mobile-menu{
+        display: block;
+    }
+}
+@media screen and (max-width:550px){
+    .navbar-action-button{
+        display: none;
+    }
+    .mobile-navbar-action-button{
         display: block;
     }
 }

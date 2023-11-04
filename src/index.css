@@ -4,8 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'TT Commons Bolder';
+  src: url('./fonts/TT Commons ExtraBold.otf') format('truetype'); /* Adjust the path and font file name as needed */
+}
 :root{
   --font-family : 'TT Commons', san-serif;
+  --font-family-bold:'TT Commons Bolder';
 
   --title-hero: 100px;
 
