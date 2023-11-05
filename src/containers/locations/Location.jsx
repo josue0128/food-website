@@ -1,9 +1,20 @@
 import React from 'react';
 import './location.css';
+import locationImage from '../../assets/locations.png'
 
 const Location = () => {
   return (
-    <div>Location</div>
+    <div className='location'>
+      <div>
+        <h3>Our Restaurant</h3>
+        <h1>LOCATIONS</h1>
+        <p>We are available in <span>JAKARTA</span>, <span>BANDUNG</span>,<br /><span>SURABAYA</span>, and <span>BALI</span>.</p>
+        <button>Learn More</button>
+      </div>
+      
+      <img src={locationImage} alt="" />
+      
+    </div>
   )
 }
 
