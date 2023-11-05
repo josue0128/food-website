@@ -1,0 +1,133 @@
+.membership-flex-container{
+    position: relative;
+    width: 100%;
+    background-image: url(../../assets//membership.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 0.5rem 4rem;
+    row-gap: 20px;
+}
+.membership-content{
+    color: #ffffff;
+    display: flex;
+}
+.membership-content > div{
+    flex-basis: 100%;
+}
+.membership-content-left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.membership-content-right-side{
+    display: flex;
+    justify-content: center;
+}
+
+.membership-content h3{
+    font-family: var(--font-family);
+    font-size: 30px ;
+}
+.membership-content h1{
+    font-family: var(--font-family-bold);
+    font-size: 68px;
+    font-weight: bolder;
+    line-height: 44px;
+    color: var(--tertiary-color);
+}
+.membership-content p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.membership-action-button button{
+    width: 100px;
+    padding: 0.7rem;
+    font-family: var(--font-family);
+    font-size: 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 2.5px solid white;
+    margin-top: 1rem;
+}
+.membership-slider-buttons{
+    margin-top: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.membership-slider-buttons > div{
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#active{
+    width: 15px;
+    height: 15px;
+}
+@media screen and (max-width:950px){
+    .membership-content h3{
+        font-size: 20px ;
+    }
+    .membership-content h1{
+        font-size: 58px;
+        line-height: 38px;
+    }
+    .membership-content p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+  
+}
+@media screen and (max-width:850px){
+    .membership-content{
+        flex-direction: column;
+    }
+    .membership-content-right-side{
+        justify-content: flex-start;
+    }
+    .membership-slider-buttons{
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width:650px){
+    .membership-flex-container{
+        background-image: url(../../assets/membership_mobile.png);
+        padding: 4rem 2rem 0.5rem 2rem;
+    }
+    .slider-buttons > div{
+        width: 5px;
+        height: 5px;
+    }
+    #active{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width:450px){
+    .membership-flex-container{
+        row-gap: 10px;
+    }
+    .membership-content h3{
+        font-size: 18px ;
+    }
+    .membership-content h1{
+        font-size: 48px;
+        line-height: 31px;
+    }
+    .membership-content p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .membership-content-right-side img{
+        width: 200px;
+    }
+}
