@@ -9,6 +9,7 @@ const Location = () => {
         <h3>Our Restaurant</h3>
         <h1>LOCATIONS</h1>
         <p>We are available in <span>JAKARTA</span>, <span>BANDUNG</span>,<br /><span>SURABAYA</span>, and <span>BALI</span>.</p>
+        <br />
         <button>Learn More</button>
       </div>
       
